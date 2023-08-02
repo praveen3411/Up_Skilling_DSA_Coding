@@ -13,9 +13,6 @@ let maximumsubarray = (nums) => {
 };
 console.log(maximumsubarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
-
-
-
 // This code defines a function called `maximumsubarray`, which takes an array of numbers `nums` as input and returns the maximum sum of any contiguous subarray within the input array. The function uses the Kadane's algorithm to efficiently find the maximum subarray sum.
 
 // Here's a step-by-step explanation of the code:
@@ -37,3 +34,18 @@ console.log(maximumsubarray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 // 8. Finally, the function returns the `maximum` sum, which represents the maximum sum of any contiguous subarray within the input array.
 
 // For example, when the function is called with the input array `[-2, 1, -3, 4, -1, 2, 1, -5, 4]`, it will find the maximum subarray sum, which is `6`. The maximum subarray is `[4, -1, 2, 1]`, and the sum of these elements is `6`.
+
+let maximumnumber = (num) => {
+  let maximum = num[0];
+  let current = num[0];
+  for (let i = 0; i < num.length; i++) {
+    if (current + num[i] > num[i]) {
+      current += num[i];
+    } else {
+      current = num[i];
+    }
+    maximum = Math.max(current, maximum);
+  }
+  return maximum;
+};
+console.log(maximumnumber([1, 2, -4, 5, 7, 3, 2, -9, 3, 9, 8]));
