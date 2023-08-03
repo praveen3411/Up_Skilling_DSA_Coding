@@ -44,4 +44,4 @@
 
 1. Combinations
 2. Permitations
-3. Remove duplicates
+3. Remove duplicate
