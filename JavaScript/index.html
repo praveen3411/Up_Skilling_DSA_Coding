@@ -17,4 +17,16 @@
     });
   }
   Main();
+
+  let one = async () => {
+    try {
+      let two = await fetch(`https://reqres.in/api/users`);
+      let make = await two.json();
+      console.log(make.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  one();
 </script>
+
