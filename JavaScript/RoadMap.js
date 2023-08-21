@@ -1,0 +1,15 @@
+// Data types: Number,String,Boolean,undefined,null,void,any;
+var One = 23;
+var Two = 45;
+var Three = "Praveen Kumar";
+var Four = "JavaScript";
+var five = true;
+var Six = null;
+var Seven = undefined;
+console.log(One);
+console.log(Two);
+console.log(Three);
+console.log(Four);
+console.log(five);
+console.log(Six);
+console.log(Seven);

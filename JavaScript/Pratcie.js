@@ -149,3 +149,20 @@ console.log(funonee(10, 20, 1, 1, 1, 1));
 let objectdis = ["name", "age", "3"];
 let [name, age, boj] = objectdis;
 console.log(name, age, boj);
+
+let duplicates = [1, 2, 3, 3, 4, 4, 5, 6, 7, 8, 8];
+let obj = {};
+let RemovingDuplicates = (on) => {
+  for (let i = 0; i <= on.length; i++) {
+    let char = on[i];
+    if (obj[char] === undefined) {
+      obj[char] = 1;
+    } else {
+      obj[char] = obj[char] + 1;
+    }
+  }
+  for (let one in obj) {
+    console.log(one);
+  }
+};
+RemovingDuplicates(duplicates)
